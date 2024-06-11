@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyGym</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        font-family: "DM Serif Text", serif;
+        margin: 0px;
+        padding: 0px;
+        background: url(images/gym.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 1000px;
+    }
+
+    .left {
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 20px;
+
+    }
+
+    .mid {
+        display: block;
+        width: 50%;
+        margin: 20px auto;
+
+
+    }
+
+    .right {
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 20px;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .navbar li a {
+        text-decoration: none;
+        padding: 28px 12px;
+        font-size: 24px;
+        color: rgb(197, 214, 228);
+    }
+
+    .navbar li a:hover {
+        text-decoration: underline;
+        color: rgb(174, 198, 198);
+    }
+
+    .navbar li a.active {
+        text-decoration: underline;
+        font-size: 24px;
+        color: grey;
+    }
+
+    .left img {
+        width: 45px;
+        height: 55px;
+        filter: invert();
+    }
+
+    .left div {
+        filter: invert();
+        font-size: 12px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .btn {
+        margin: 0px 5px;
+        color: white;
+        background-color: black;
+        padding: 4px 16px;
+        border: 2px solid grey;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(31, 30, 30);
+    }
+
+    .container {
+        margin: 150px 60px;
+        padding: 10x 10px;
+        width: 40%;
+    }
+
+    .container h2 {
+        color: beige;
+        text-align: center;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 60%;
+        padding: 5px 5px;
+        border: 2px solid black;
+        margin: 10px auto;
+        border-radius: 5px;
+        font-size: 17px;
+        border-radius: 10px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    }
+
+    .container .btn {
+        display: block;
+        margin: 15px auto;
+        font-size: 20px;
+        border-radius: 10px;
+        display: block;
+        width: 60%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="images/gym logo.webp" alt="">
+            <div>
+                AK Fitness
+            </div>
+
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Fitness Calculator</a></li>
+                <li><a href="">Contact us</a></li>
+            </ul>
+
+
+        </div>
+
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn">Email us</button>
+
+
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Join the best Gym in Delhi</h2>
+        <form action="Noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your age">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your gender">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your locality">
+            </div>
+
+            <button class="btn">Submit</button>
+
+
+
+        </form>
+    </div>
+
+</body>
+
+</html>
